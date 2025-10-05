@@ -1,0 +1,43 @@
+{
+  "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
+  "extends": ["ultracite"],
+  "files": {
+    "includes": ["**", "!**/*.css"]
+  },
+  "linter": {
+    "rules": {
+      "style": {
+        "noMagicNumbers": "off",
+        "noNestedTernary": "off"
+      },
+      "performance": {
+        "noNamespaceImport": "off",
+        "noImgElement": "off"
+      },
+      "nursery": {
+        "noShadow": "off",
+        "useAnchorHref": "off"
+      },
+      "suspicious": {
+        "noArrayIndexKey": "off",
+        "noDocumentCookie": "off"
+      },
+      "security": {
+        "noDangerouslySetInnerHtml": "off"
+      },
+      "complexity": {
+        "noExcessiveCognitiveComplexity": "off"
+      },
+      "correctness": {
+        "noNestedComponentDefinitions": "off"
+      },
+      "a11y": {
+        "noNoninteractiveElementInteractions": "off",
+        "useSemanticElements": "off",
+        "useKeyWithClickEvents": "off",
+        "useAriaPropsForRole": "off",
+        "useFocusableInteractive": "off"
+      }
+    }
+  }
+}

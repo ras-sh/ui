@@ -1,0 +1,52 @@
+{
+  "name": "@ras-sh/ui",
+  "version": "0.0.1",
+  "type": "module",
+  "description": "Shared UI library for ras.sh projects.",
+  "keywords": [
+    "ui",
+    "library",
+    "shadcn",
+    "ras.sh"
+  ],
+  "homepage": "https://ras.sh",
+  "bugs": {
+    "url": "https://github.com/ras-sh/ui/issues",
+    "email": "hi@ras.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ras-sh/ui"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Richard Solomou",
+    "email": "hi@ras.sh",
+    "url": "https://ras.sh"
+  },
+  "scripts": {
+    "check-types": "tsc --noEmit",
+    "check": "ultracite check",
+    "fix": "ultracite fix --unsafe"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.544.0",
+    "tailwind-merge": "^3.3.1",
+    "tw-animate-css": "^1.4.0"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.2.5",
+    "@ras-sh/typescript-config": "^0.0.1",
+    "@types/node": "^24.6.2",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "tailwindcss": "^4.1.14",
+    "typescript": "^5.9.3",
+    "ultracite": "^5.5.0"
+  }
+}
