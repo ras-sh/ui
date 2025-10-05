@@ -1,1 +1,89 @@
 # @ras-sh/ui
+
+Shared UI library for ras.sh projects.
+
+## Installation
+
+```bash
+pnpm add @ras-sh/ui
+```
+
+## Configuration
+
+### Vite
+
+#### 1. Install dependencies
+
+```bash
+pnpm add -D @tailwindcss/vite tailwindcss
+```
+
+#### 2. Configure Vite
+
+Add the Tailwind CSS plugin to your `vite.config.ts`:
+
+```ts
+import tailwindcss from "@tailwindcss/vite";
+import react from "@vitejs/plugin-react";
+import { defineConfig } from "vite";
+
+export default defineConfig({
+  plugins: [react(), tailwindcss()],
+});
+```
+
+#### 3. Import styles
+
+Import the global styles in your main CSS file:
+
+```css
+@import "tailwindcss";
+
+@source "../node_modules/@ras-sh/ui";
+@import "../node_modules/@ras-sh/ui/dist/globals.css";
+```
+
+Adjust the paths based on your project structure.
+
+### Next.js
+
+#### 1. Install dependencies
+
+```bash
+pnpm add -D @tailwindcss/postcss tailwindcss
+```
+
+#### 2. Configure PostCSS
+
+Create or update `postcss.config.mjs`:
+
+```js
+export default {
+  plugins: {
+    "@tailwindcss/postcss": {},
+  },
+};
+```
+
+#### 3. Import styles
+
+Import the global styles in your root layout or main CSS file:
+
+```css
+@import "tailwindcss";
+
+@source "../../node_modules/@ras-sh/ui";
+@import "../../node_modules/@ras-sh/ui/dist/globals.css";
+```
+
+Adjust the paths based on your project structure.
+
+## Usage
+
+```tsx
+import { Button } from "@ras-sh/ui";
+
+export default function Home() {
+  return <Button>Click me</Button>;
+}
+```
