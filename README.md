@@ -40,7 +40,7 @@ Import the global styles in your main CSS file:
 @import "tailwindcss";
 
 @source "../node_modules/@ras-sh/ui";
-@import "../node_modules/@ras-sh/ui/dist/globals.css";
+@import "@ras-sh/ui/globals.css";
 ```
 
 Adjust the paths based on your project structure.
@@ -73,7 +73,7 @@ Import the global styles in your root layout or main CSS file:
 @import "tailwindcss";
 
 @source "../../node_modules/@ras-sh/ui";
-@import "../../node_modules/@ras-sh/ui/dist/globals.css";
+@import "@ras-sh/ui/globals.css";
 ```
 
 Adjust the paths based on your project structure.

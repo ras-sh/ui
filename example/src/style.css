@@ -1,4 +1,4 @@
 @import "tailwindcss";
 
 @source "../node_modules/@ras-sh/ui";
-@import "../node_modules/@ras-sh/ui/dist/globals.css";
+@import "@ras-sh/ui/globals.css";
