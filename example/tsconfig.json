@@ -1,5 +1,5 @@
 {
-  "extends": "@ras-sh/typescript-config/react-library.json",
+  "extends": "@ras-sh/typescript-config/tanstack-start.json",
   "compilerOptions": {
     "paths": {
       "~/*": ["./src/*"]
