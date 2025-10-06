@@ -87,3 +87,11 @@ export default function Home() {
   return <Button>Click me</Button>;
 }
 ```
+
+## Examples
+
+Check out the example projects to see how to use the library:
+
+- [Vite Example](./examples/vite) - React app using Vite
+- [Next.js Example](./examples/nextjs) - Next.js app using Webpack
+- [Next.js Turbopack Example](./examples/nextjs-turbopack) - Next.js app using Turbopack
