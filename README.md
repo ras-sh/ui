@@ -80,6 +80,46 @@ Adjust the paths based on your project structure.
 
 ## Usage
 
+### Import Options
+
+The library supports tree-shaking and offers two import styles:
+
+**Barrel import (recommended for convenience):**
+```tsx
+import { Button, Card } from "@ras-sh/ui";
+```
+
+**Subpath import (optimal for tree-shaking):**
+```tsx
+import { Button } from "@ras-sh/ui/button";
+import { Card } from "@ras-sh/ui/card";
+```
+
+Both styles are tree-shaken properly. Component-specific dependencies are automatically bundled.
+
+### Peer Dependencies
+
+Some components require additional peer dependencies. Install only what you need:
+
+```bash
+# For Form components
+pnpm add react-hook-form @hookform/resolvers zod
+
+# For Table components
+pnpm add @tanstack/react-table
+
+# For Chart components
+pnpm add recharts
+
+# For Calendar/date components
+pnpm add date-fns
+
+# For icons
+pnpm add lucide-react
+```
+
+### Example
+
 ```tsx
 import { Button } from "@ras-sh/ui";
 

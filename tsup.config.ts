@@ -26,9 +26,6 @@ export default defineConfig({
     // Charts
     "recharts",
 
-    // Carousel
-    "embla-carousel-react",
-
     // Icons
     "lucide-react",
 
