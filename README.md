@@ -39,8 +39,8 @@ Import the global styles in your main CSS file:
 ```css
 @import "tailwindcss";
 
-@source "../../node_modules/@ras-sh/ui";
 @import "@ras-sh/ui/globals.css";
+@source "../../node_modules/@ras-sh/ui";
 ```
 
 Adjust the paths based on your project structure.
@@ -72,8 +72,8 @@ Import the global styles in your root layout or main CSS file:
 ```css
 @import "tailwindcss";
 
-@source "../node_modules/@ras-sh/ui";
 @import "@ras-sh/ui/globals.css";
+@source "../node_modules/@ras-sh/ui";
 ```
 
 Adjust the paths based on your project structure.
@@ -132,6 +132,5 @@ export default function Home() {
 
 Check out the example projects to see how to use the library:
 
+- [Next.js Example](./examples/nextjs) - Next.js app using Turbopack
 - [Vite Example](./examples/vite) - React app using Vite
-- [Next.js Example](./examples/nextjs) - Next.js app using Webpack
-- [Next.js Turbopack Example](./examples/nextjs-turbopack) - Next.js app using Turbopack
