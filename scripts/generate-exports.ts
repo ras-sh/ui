@@ -78,7 +78,10 @@ const exports: Record<string, unknown> = {
 // Get all components
 const componentsDir = resolve("dist/components/ui");
 const components = readdirSync(componentsDir)
-  .filter((f) => f.endsWith(".js") && !f.includes(".stories."))
+  .filter(
+    (f) =>
+      f.endsWith(".js") && !f.includes(".stories.") && !f.includes(".test.")
+  )
   .map((f) => f.replace(".js", ""));
 
 for (const comp of components) {
@@ -91,7 +94,10 @@ for (const comp of components) {
 // Get all hooks
 const hooksDir = resolve("dist/hooks");
 const hooks = readdirSync(hooksDir)
-  .filter((f) => f.endsWith(".js") && !f.includes(".stories."))
+  .filter(
+    (f) =>
+      f.endsWith(".js") && !f.includes(".stories.") && !f.includes(".test.")
+  )
   .map((f) => f.replace(".js", ""));
 
 for (const hook of hooks) {
@@ -104,7 +110,10 @@ for (const hook of hooks) {
 // Get all lib files
 const libDir = resolve("dist/lib");
 const libs = readdirSync(libDir)
-  .filter((f) => f.endsWith(".js") && !f.includes(".stories."))
+  .filter(
+    (f) =>
+      f.endsWith(".js") && !f.includes(".stories.") && !f.includes(".test.")
+  )
   .map((f) => f.replace(".js", ""));
 
 for (const lib of libs) {
