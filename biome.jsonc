@@ -17,7 +17,8 @@
       },
       "suspicious": {
         "noArrayIndexKey": "off",
-        "noDocumentCookie": "off"
+        "noDocumentCookie": "off",
+        "noShadowRestrictedNames": "off"
       },
       "security": {
         "noDangerouslySetInnerHtml": "off"
@@ -33,7 +34,9 @@
         "useSemanticElements": "off",
         "useKeyWithClickEvents": "off",
         "useAriaPropsForRole": "off",
-        "useFocusableInteractive": "off"
+        "useFocusableInteractive": "off",
+        "noSvgWithoutTitle": "off",
+        "noRedundantAlt": "off"
       }
     }
   }
