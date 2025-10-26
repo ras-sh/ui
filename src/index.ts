@@ -55,6 +55,7 @@ export {
   CarouselNext,
   CarouselPrevious,
 } from "./components/ui/carousel";
+export type { ChartConfig } from "./components/ui/chart";
 export {
   ChartContainer,
   ChartLegend,
