@@ -260,10 +260,10 @@
     "./dist/globals.css"
   ],
   "scripts": {
-    "build": "tsup && cp src/globals.css dist/globals.css && tsx scripts/generate-exports.ts",
+    "build": "tsx scripts/generate-exports.ts && tsdown && cp src/globals.css dist/globals.css",
     "test": "vitest run",
     "test:coverage": "vitest run --coverage",
-    "dev": "tsup --watch",
+    "dev": "tsdown --watch",
     "check-types": "tsc --noEmit",
     "check": "ultracite check",
     "fix": "ultracite fix --unsafe",
@@ -319,7 +319,7 @@
     "react-dom": "^19.2.0",
     "storybook": "^10.0.0",
     "tailwindcss": "^4.1.16",
-    "tsup": "^8.5.0",
+    "tsdown": "^0.15.11",
     "tsx": "^4.20.6",
     "typescript": "^5.9.3",
     "ultracite": "^6.0.5",

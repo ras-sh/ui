@@ -1,4 +1,4 @@
-import { defineConfig } from "tsup";
+import { defineConfig } from "tsdown";
 
 export default defineConfig({
   entry: [
@@ -7,14 +7,6 @@ export default defineConfig({
     "!src/**/*.stories.*",
     "!src/**/*.test.*",
   ],
-  format: ["esm", "cjs"],
-  dts: true,
-  clean: true,
-  splitting: true,
-  treeshake: true,
-  esbuildOptions(options) {
-    options.jsx = "automatic";
-  },
   external: [
     // React ecosystem
     "react",
