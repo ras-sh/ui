@@ -1,5 +1,11 @@
 # @ras-sh/ui
 
+## 0.0.6
+
+### Patch Changes
+
+- a77eb61: fix build
+
 ## 0.0.5
 
 ### Patch Changes
