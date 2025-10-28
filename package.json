@@ -260,7 +260,8 @@
     "./dist/globals.css"
   ],
   "scripts": {
-    "build": "tsx scripts/generate-exports.ts && tsdown && cp src/globals.css dist/globals.css",
+    "generate-exports": "tsx scripts/generate-exports.ts",
+    "build": "tsdown && cp src/globals.css dist/globals.css",
     "test": "vitest run",
     "test:coverage": "vitest run --coverage",
     "dev": "tsdown --watch",
